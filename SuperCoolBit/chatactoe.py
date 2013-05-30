@@ -155,7 +155,7 @@ class MainPage(webapp.RequestHandler):
           game.userO = user
           game.put()
 
-      game_link = 'http://localhost:8080/?g=' + game_key
+      game_link = 'http://supercoolbit.appspot.com/?g=' + game_key
 
       if game:
         token = channel.create_channel(user.user_id() + game_key)
